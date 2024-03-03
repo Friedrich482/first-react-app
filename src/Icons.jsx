@@ -1,7 +1,7 @@
 import React from "react";
 import gitHubLogo from "./assets/imgs/icons/github.svg";
 import LinkedinLogo from "./assets/imgs/icons/linkedin.svg";
-
+import MailLogo from "./assets/imgs/icons/envelope.svg"
 const iconsProps = [
   {
     logo: gitHubLogo,
@@ -12,6 +12,11 @@ const iconsProps = [
     logo: LinkedinLogo,
     link: "https://www.linkedin.com/in/friedrich-wekenon-tokponto-106789283/",
     altText: "LinkedIn Logo",
+  },
+  {
+    logo: MailLogo,
+    link: "mailto:friedricht109@gmail.com",
+    altText: "Mail Logo",
   },
   
 ];

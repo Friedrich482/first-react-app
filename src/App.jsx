@@ -1,6 +1,7 @@
 import './App.css'
 import "./assets/style.css"
 import Header from './Header'
+import Content from './Content'
 import Footer from './Footer'
 function App() {
   const root = document.querySelector("#root");
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
      <Header />
+     <Content />
      <Footer />
     </>
   )

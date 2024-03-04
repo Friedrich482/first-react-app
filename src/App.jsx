@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 import "./assets/style.css"
 import Header from './Header'
 import Content from './Content'

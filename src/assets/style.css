@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -556,23 +560,22 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.size-72 {
+  width: 18rem;
+  height: 18rem;
+}
+
 .size-8 {
   width: 2rem;
   height: 2rem;
 }
 
-.size-96 {
-  width: 24rem;
-  height: 24rem;
+.h-\[530px\] {
+  height: 530px;
 }
 
-.size-10 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.h-\[650px\] {
-  height: 650px;
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-5\/6 {
@@ -647,14 +650,14 @@ video {
   border-style: double;
 }
 
-.border-red-500 {
+.border-amber-800 {
   --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  border-color: rgb(146 64 14 / var(--tw-border-opacity));
 }
 
-.border-teal-700 {
+.border-red-600 {
   --tw-border-opacity: 1;
-  border-color: rgb(15 118 110 / var(--tw-border-opacity));
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .border-yellow-300 {
@@ -662,24 +665,29 @@ video {
   border-color: rgb(253 224 71 / var(--tw-border-opacity));
 }
 
+.border-t-black {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-indigo-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 75 / var(--tw-bg-opacity));
+}
+
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-stone-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .text-center {
@@ -715,14 +723,14 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-red-600 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
-.text-yellow-500 {
+.text-teal-100 {
   --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
+  color: rgb(204 251 241 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -741,6 +749,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("./imgs/house-interior.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #root{
@@ -773,7 +789,7 @@ body{
 }
 
 @media (min-width: 640px) {
-  .sm\:w-10\/12 {
-    width: 83.333333%;
+  .sm\:w-5\/12 {
+    width: 41.666667%;
   }
 }

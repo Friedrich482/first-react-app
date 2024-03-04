@@ -8,7 +8,7 @@ const houses = [
   {
     src: House1,
     description:
-      "A wonderful house at Kansas City. Much beautiful the night with a lot of light! Enjoy your house! ",
+      "A wonderful house at Kansas City. Much beautiful the night with a lot of light !",
     price: 120000
   },
   {
@@ -18,17 +18,17 @@ const houses = [
   },
   {
     src: House3,
-    description: "A little castle perfect for Chrismas. Santa will bring you beautiful presents !",
+    description: "With this one and its beautiful pool, the summer is yours !",
     price: 115000
   },
   {
     src: House4,
-    description: "A fortress with a big park. Your kids wont miss place to play. Perfect for a short seclusion !",
+    description: "A fortress with a big park. Your kids wont miss space to play !",
     price: 150000
   },
   {
     src: House5,
-    description: "That house is your dream place if you want to stay cozy and have park and forest near you! Enjoy your palace ! ",
+    description: "This house is perfect if you want to stay cozy and have forest near you !",
     price: 99000
   },
 ];

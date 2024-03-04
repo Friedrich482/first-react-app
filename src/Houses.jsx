@@ -1,6 +1,7 @@
 import React from "react";
 import houses from "./housesData";
 import { useState } from "react";
+import Badge from "./assets/imgs/icons/badge.svg";
 const Houses = () => {
   const [buyButton, setBuyButton] = useState("Buy Now !");
   return houses.map((house, index) => (
@@ -16,7 +17,8 @@ const Houses = () => {
       <p className="text-center text-yellow-500 w-5/6 text-xl">
         {house.description}
       </p>
-      <p className="text-3xl text-black font-bold bg-red-600 w-full border-yellow-300 border-double border-t-4 border-b-4 text-center">
+      <p className="text-3xl text-black font-bold bg-red-600 w-full border-yellow-300 border-double border-t-4 border-b-4 text-center flex items-center justify-center">
+        <img src={Badge} alt={`Price badge for the house n°${index + 1}`} className="size-8" />
         {house.price} $
       </p>
       <button

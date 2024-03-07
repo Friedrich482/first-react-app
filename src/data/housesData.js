@@ -1,10 +1,10 @@
 import React from "react";
-import House1 from "./assets/imgs/houses/h1.jpg";
-import House2 from "./assets/imgs/houses/h2.jpeg";
-import House3 from "./assets/imgs/houses/h3.jpg";
-import House4 from "./assets/imgs/houses/h4.jpg";
-import House5 from "./assets/imgs/houses/h5.jpeg";
-import House6 from "./assets/imgs/houses/h6.jpg";
+import House1 from "../assets/imgs/houses/h1.jpg";
+import House2 from "../assets/imgs/houses/h2.jpeg";
+import House3 from "../assets/imgs/houses/h3.jpg";
+import House4 from "../assets/imgs/houses/h4.jpg";
+import House5 from "../assets/imgs/houses/h5.jpeg";
+import House6 from "../assets/imgs/houses/h6.jpg";
 const houses = [
   {
     id: 1,

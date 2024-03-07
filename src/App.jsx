@@ -1,18 +1,20 @@
-// import './App.css'
-import "./assets/style.css"
-import Header from './Header'
-import Content from './Content'
-import Footer from './Footer'
+import "./assets/style.css";
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+import houses from "./housesData";
+import Badge from "./assets/imgs/icons/badge.svg";
+// import { useState } from "react";
+
 function App() {
-  const root = document.querySelector("#root");
-  root.classList.add("flex", "justify-center", "align-center", "flex-col", "gap-16")
+  // const [buyButton, setBuyButton] = useState("Buy Now !");
   return (
-    <>
-     <Header />
-     <Content />
-     <Footer />
-    </>
-  )
+    <div className="flex justify-center align-center flex-col gap-16">
+      <Header />
+      <Content houses={houses} badge={Badge} />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -2,8 +2,9 @@ import "./assets/style.css";
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
-import houses from "./housesData";
+import houses from "./data/housesData";
 import Badge from "./assets/imgs/icons/badge.svg";
+import iconsProps from "./data/iconsData";
 import { useState } from "react";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         houseSold={houseSold}
         handleClick={handleClick}
       />
-      <Footer />
+      <Footer iconsProps={iconsProps}/>
     </div>
   );
 }

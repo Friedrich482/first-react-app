@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className="flex justify-center align-center flex-col gap-16">
+    <div className="flex justify-center align-center flex-col gap-12">
       <Header />
       <Content
         houses={houses}

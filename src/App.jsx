@@ -1,4 +1,3 @@
-import "./assets/style.css";
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
@@ -6,6 +5,7 @@ import houses from "./data/housesData";
 import Badge from "./assets/imgs/icons/badge.svg";
 import iconsProps from "./data/iconsData";
 import { useState } from "react";
+import "./index.css";
 
 function App() {
   const [houseSold, setHouseSold] = useState(Array(houses.length).fill(false));

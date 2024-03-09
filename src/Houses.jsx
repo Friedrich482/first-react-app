@@ -4,7 +4,7 @@ const Houses = ({ houses, badge, houseSold, handleClick }) => {
   return houses.map(({ id, src, description, price }, index) => (
     <div
       key={id}
-      className="flex items-center flex-col border-8 border-amber-800 rounded-lg w-[450px] gap-2 h-[530px] bg-indigo-950"
+      className="flex items-center flex-col border-8 border-amber-800 rounded-lg max-w-96 min-w-72 sm:w-9/12 sm:min-w-[550px] gap-3 min-h-[532px] bg-indigo-950 pb-1"
     >
       <img
         src={src}
@@ -22,10 +22,10 @@ const Houses = ({ houses, badge, houseSold, handleClick }) => {
       </p>
       <button
         type="button"
-        className="bg-yellow-600 hover:scale-110 transition duration-1000 hover:border-white hover:border-2 hover:text-xl hover:text-black"
+        className="bg-yellow-600 hover:scale-110 transform duration-1000 hover:border-white hover:border-2 hover:text-xl hover:text-black p-2 rounded-lg w-7/12 font-bold"
         onClick={() => handleClick(index)}
       >
-        {houseSold[index] ? "Already sold" : "Buy now"}
+        {houseSold[index] ? "Already sold !" : "Buy now !"}
       </button>
     </div>
   ));

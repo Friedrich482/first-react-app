@@ -10,7 +10,7 @@ const houses = [
     id: 1,
     src: House1,
     description:
-      "A wonderful house at Kansas City. Much beautiful the night with a lot of light !",
+      "Kansa city House. Much beautiful the night with a lot of light !",
     price: 120000,
     sold: true,
   },

@@ -137,4 +137,4 @@ const houses3 = [
   },
 ];
 
-export default {houses1, houses2, houses3};
+export {houses1, houses2, houses3};

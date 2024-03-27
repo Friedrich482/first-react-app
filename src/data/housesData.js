@@ -1,4 +1,3 @@
-import React from "react";
 import House1 from "../assets/imgs/houses/h1.avif";
 import House2 from "../assets/imgs/houses/h2.avif";
 import House3 from "../assets/imgs/houses/h3.avif";
@@ -15,7 +14,7 @@ import House13 from "../assets/imgs/houses/h13.avif";
 import House14 from "../assets/imgs/houses/h14.avif";
 import House15 from "../assets/imgs/houses/h15.avif";
 
-const houses1 = [
+const houses = [
   {
     id: 1,
     src: House1,
@@ -62,8 +61,6 @@ const houses1 = [
     price: 99000,
     sold: false,
   },
-];
-const houses2 = [
   {
     id: 7,
     src: House7,
@@ -110,8 +107,6 @@ const houses2 = [
     price: 99000,
     sold: false,
   },
-];
-const houses3 = [
   {
     id: 13,
     src: House13,
@@ -137,4 +132,5 @@ const houses3 = [
   },
 ];
 
-export {houses1, houses2, houses3};
+
+export default houses;

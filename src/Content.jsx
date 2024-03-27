@@ -1,4 +1,3 @@
-import React from "react";
 import Houses from "./Houses";
 const Content = ({ houses, badge, houseSold, setHouseSold, handleClick }) => {
   return (

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Houses = ({ houses, badge, houseSold, handleClick }) => {
   return houses.map(({ id, src, description, price }, index) => (
     <div

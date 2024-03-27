@@ -2,15 +2,15 @@ const Houses = ({ houses, badge, houseSold, handleClick }) => {
   return houses.map(({ id, src, description, price }, index) => (
     <div
       key={id}
-      className="flex items-center flex-col border-8 border-amber-800 rounded-lg max-w-96 min-w-72 sm:w-9/12 sm:min-w-[550px] gap-3 min-h-[532px] bg-indigo-950 pb-1"
+      className="flex min-w-72 max-w-80 flex-col items-center rounded-lg border-8 border-amber-800 bg-indigo-950 pb-1"
     >
       <img
         src={src}
         alt={`House n°${id + 1}`}
-        className="size-72 aspect-square mt-8 border-solid border-4 border-red-600 rounded-lg w-11/12"
+        className="mt-8 aspect-square size-72 w-11/12 rounded-lg border-4 border-solid border-red-600"
       />
-      <p className="text-center text-teal-100 w-5/6 text-xl">{description}</p>
-      <p className="text-3xl text-white font-bold bg-red-600 w-full border-yellow-300 border-double border-t-4 border-b-4 text-center flex items-center justify-center">
+      <p className="w-5/6 text-center text-xl text-teal-100">{description}</p>
+      <p className="flex w-full items-center justify-center border-b-4 border-t-4 border-double border-yellow-300 bg-red-600 text-center text-3xl font-bold text-white">
         <img
           src={badge}
           alt={`Price badge for the n°${id + 1}`}
@@ -20,7 +20,7 @@ const Houses = ({ houses, badge, houseSold, handleClick }) => {
       </p>
       <button
         type="button"
-        className="bg-yellow-600 hover:scale-110 transform duration-1000 hover:border-white hover:border-2 hover:text-xl hover:text-black p-2 rounded-lg w-7/12 font-bold"
+        className="w-7/12 transform rounded-lg bg-yellow-600 p-2 font-bold duration-1000 hover:scale-110 hover:border-2 hover:border-white hover:text-xl hover:text-black"
         onClick={() => handleClick(index)}
       >
         {houseSold[index] ? "Already sold !" : "Buy now !"}

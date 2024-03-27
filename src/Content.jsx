@@ -1,8 +1,7 @@
-import React from "react";
 import Houses from "./Houses";
 const Content = ({ houses, badge, houseSold, setHouseSold, handleClick }) => {
   return (
-    <main className="flex items-center justify-center flex-col gap-8 p-1">
+    <main className="flex w-full flex-wrap items-center justify-center gap-10 pl-3 pr-3">
       <Houses
         houses={houses}
         badge={badge}

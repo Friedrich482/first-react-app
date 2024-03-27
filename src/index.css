@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,10 +11,10 @@ body{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Kalam", cursive;
+  font-family: cursive;
   font-weight: 400;
   font-style: normal;
 }
-#root{
+#root {
   width: 100%;
 }

@@ -1,5 +1,5 @@
 const Houses = ({ houses, badge, houseSold, handleClick }) => {
-  return houses.map(({ id, src, description, price }, index) => (
+  return houses.map(({ id, src, location, price }, index) => (
     <div
       key={id}
       className="flex min-w-72 max-w-80 flex-col items-center rounded-lg border-8 border-amber-800 bg-indigo-950 pb-1"
@@ -9,7 +9,7 @@ const Houses = ({ houses, badge, houseSold, handleClick }) => {
         alt={`House n°${id + 1}`}
         className="mt-8 aspect-square size-72 w-11/12 rounded-lg border-4 border-solid border-red-600"
       />
-      <p className="w-5/6 text-center text-xl text-teal-100">{description}</p>
+      <p className="w-5/6 text-center text-xl text-teal-100">{location}</p>
       <p className="flex w-full items-center justify-center border-b-4 border-t-4 border-double border-yellow-300 bg-red-600 text-center text-3xl font-bold text-white">
         <img
           src={badge}

@@ -16,7 +16,7 @@ function App() {
     setHouseSold(newHouseSold);
   };
   return (
-    <div className="flex justify-center align-center flex-col gap-12">
+    <div className="align-center flex flex-col justify-center gap-12">
       <Header />
       <Content
         houses={houses}
@@ -25,7 +25,7 @@ function App() {
         setHouseSold={setHouseSold}
         handleClick={handleClick}
       />
-      <Footer iconsProps={iconsProps}/>
+      <Footer iconsProps={iconsProps} />
     </div>
   );
 }

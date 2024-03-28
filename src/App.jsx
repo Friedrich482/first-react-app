@@ -9,10 +9,9 @@ import "./index.css";
 
 function App() {
   const [houseSold, setHouseSold] = useState(Array(houses.length).fill(false));
-
   const handleClick = (index) => {
     const newHouseSold = [...houseSold];
-    newHouseSold[index] = !newHouseSold[index];
+    newHouseSold[index] = true;
     setHouseSold(newHouseSold);
   };
   return (

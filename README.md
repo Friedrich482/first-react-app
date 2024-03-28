@@ -1,3 +1,24 @@
-# React First Application  
+# React First Application 
 
-This is my first application using React JS. The goal will be an Home Sale Application 🏠. It's my first time so I won't be optimal. But this is not the goal here. The goal is to get my hands dirty as soon as possible with this JavaScript Library...
+Welcome in my Home Sale App 🏠 !
+
+## Run the application
+
+You can preview it on Vercel.
+
+Or to run locally use : 
+
+``` code
+git clone https://github.com/Friedrich482/first-react-app.git
+```
+
+After that, go in the root of the project and install all dependencies by using :
+
+``` code
+npm install
+```
+And finally to serve the project locally, use the command : 
+``` code
+npm run dev
+```
+After that open ```localhost:5173``` to see the result.

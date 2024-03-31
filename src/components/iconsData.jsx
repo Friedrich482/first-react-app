@@ -1,4 +1,3 @@
-import React from "react";
 import gitHubLogo from "../assets/imgs/icons/github.svg";
 import LinkedinLogo from "../assets/imgs/icons/linkedin.svg";
 import MailLogo from "../assets/imgs/icons/envelope.svg"

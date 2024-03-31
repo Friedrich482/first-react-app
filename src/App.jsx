@@ -3,7 +3,6 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 import houses from "./components/HousesData";
 import Badge from "./assets/imgs/icons/badge.svg";
-import iconsProps from "./components/iconsData";
 import { useState } from "react";
 import "./index.css";
 
@@ -24,7 +23,7 @@ function App() {
         setHouseSold={setHouseSold}
         handleClick={handleClick}
       />
-      <Footer iconsProps={iconsProps} />
+      <Footer />
     </div>
   );
 }

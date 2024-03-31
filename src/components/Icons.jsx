@@ -1,5 +1,3 @@
-import React from "react";
-
 export function Icons({ iconsProps }) {
   return iconsProps.map(({ id, logo, link, altText }) => (
     <a href={link} key={id}>

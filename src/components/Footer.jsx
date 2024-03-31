@@ -1,4 +1,3 @@
-import React from "react";
 import { Icons } from "./Icons";
 const Footer = ({iconsProps}) => {
   const date = new Date();

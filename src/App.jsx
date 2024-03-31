@@ -1,9 +1,9 @@
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
-import houses from "./data/housesData";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import houses from "./components/HousesData";
 import Badge from "./assets/imgs/icons/badge.svg";
-import iconsProps from "./data/iconsData";
+import iconsProps from "./components/iconsData";
 import { useState } from "react";
 import "./index.css";
 

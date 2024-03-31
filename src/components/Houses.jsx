@@ -1,5 +1,4 @@
-import React from "react";
-import locationIcon from "./assets/imgs/icons/location.svg";
+import locationIcon from "../assets/imgs/icons/location.svg";
 const Houses = ({ houses, badge, houseSold, handleClick }) => {
   return houses.map(({ id, src, location, price }, index) => (
     <div

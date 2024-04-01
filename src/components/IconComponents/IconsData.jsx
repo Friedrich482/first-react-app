@@ -1,8 +1,7 @@
-import React from "react";
-import gitHubLogo from "../assets/imgs/icons/github.svg";
-import LinkedinLogo from "../assets/imgs/icons/linkedin.svg";
-import MailLogo from "../assets/imgs/icons/envelope.svg"
-const iconsProps = [
+import gitHubLogo from "../../assets/imgs/icons/github.svg";
+import LinkedinLogo from "../../assets/imgs/icons/linkedin.svg";
+import MailLogo from "../../assets/imgs/icons/envelope.svg";
+const IconsData = [
   {
     id: 1,
     logo: gitHubLogo,
@@ -21,7 +20,6 @@ const iconsProps = [
     link: "mailto:friedricht109@gmail.com",
     altText: "Mail Logo",
   },
-  
 ];
 
-export default iconsProps
+export default IconsData;

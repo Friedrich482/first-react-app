@@ -4,7 +4,7 @@ const Icons = () => {
   return (
     <>
       {IconsData.map(({ link, altText, id, logo }) => (
-        <Icon link={link} key={id} altText={altText} logo={logo} />
+        <Icon link={link} id={id} altText={altText} logo={logo} />
       ))}
     </>
   );

@@ -1,10 +1,18 @@
 import { useState } from "react";
 import LocationIcon from "../../assets/imgs/icons/location.svg";
 import Badge from "../../assets/imgs/icons/badge.svg";
-const House = ({ src, id, price, location }) => {
+
+export interface HouseProps{
+  src: string;
+  id: number; 
+  price: number;
+  location: string;
+}
+
+const House = ({ src, id, price, location }: HouseProps) => {
   const [houseSold, setHouseSold] = useState(false);
 
-  const handleSoldButtonClick = (previousState) => {
+  const handleSoldButtonClick = (previousState: boolean) => {
     if (!previousState) {
       setHouseSold(!previousState);
     }

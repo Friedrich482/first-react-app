@@ -1,20 +1,20 @@
-import House1 from "../assets/imgs/houses/h1.webp";
-import House2 from "../assets/imgs/houses/h2.webp";
-import House3 from "../assets/imgs/houses/h3.webp";
-import House4 from "../assets/imgs/houses/h4.webp";
-import House5 from "../assets/imgs/houses/h5.webp";
-import House6 from "../assets/imgs/houses/h6.webp";
-import House7 from "../assets/imgs/houses/h7.webp";
-import House8 from "../assets/imgs/houses/h8.webp";
-import House9 from "../assets/imgs/houses/h9.webp";
-import House10 from "../assets/imgs/houses/h10.webp";
-import House11 from "../assets/imgs/houses/h11.webp";
-import House12 from "../assets/imgs/houses/h12.webp";
-import House13 from "../assets/imgs/houses/h13.webp";
-import House14 from "../assets/imgs/houses/h14.webp";
-import House15 from "../assets/imgs/houses/h15.webp";
+import House2 from "../../assets/imgs/houses/h2.webp";
+import House1 from "../../assets/imgs/houses/h1.webp";
+import House3 from "../../assets/imgs/houses/h3.webp";
+import House4 from "../../assets/imgs/houses/h4.webp";
+import House5 from "../../assets/imgs/houses/h5.webp";
+import House6 from "../../assets/imgs/houses/h6.webp";
+import House7 from "../../assets/imgs/houses/h7.webp";
+import House8 from "../../assets/imgs/houses/h8.webp";
+import House9 from "../../assets/imgs/houses/h9.webp";
+import House10 from "../../assets/imgs/houses/h10.webp";
+import House11 from "../../assets/imgs/houses/h11.webp";
+import House12 from "../../assets/imgs/houses/h12.webp";
+import House13 from "../../assets/imgs/houses/h13.webp";
+import House14 from "../../assets/imgs/houses/h14.webp";
+import House15 from "../../assets/imgs/houses/h15.webp";
 
-const houses = [
+const HousesData = [
   {
     id: 1,
     src: House1,
@@ -122,4 +122,4 @@ const houses = [
   },
 ];
 
-export default houses;
+export default HousesData;

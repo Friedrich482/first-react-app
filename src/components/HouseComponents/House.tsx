@@ -1,7 +1,22 @@
-// import { useState } from "react";
+import { useState } from "react";
 import LocationIcon from "../../assets/imgs/icons/location.svg";
 import Badge from "../../assets/imgs/icons/badge.svg";
-const House = ({ src, id, price, location }) => {
+
+export interface HouseProps{
+  src: string;
+  id: number; 
+  price: number;
+  location: string;
+}
+
+const House = ({ src, id, price, location }: HouseProps) => {
+  const [houseSold, setHouseSold] = useState(false);
+
+  const handleSoldButtonClick = (previousState: boolean) => {
+    if (!previousState) {
+      setHouseSold(!previousState);
+    }
+  };
   return (
     <div
       key={id}
@@ -26,10 +41,10 @@ const House = ({ src, id, price, location }) => {
       </p>
       <button
         type="button"
-        className="w-8/12 transform rounded-lg bg-yellow-600 p-2 font-bold duration-1000 hover:scale-110 hover:border-2 hover:border-white hover:text-xl hover:text-black"
-        // onClick={() => handleClick(index)}
+        className={`w-8/12 rounded-lg p-2 font-bold  ${houseSold ? "cursor-not-allowed bg-yellow-600 opacity-85" : "transform bg-yellow-600 duration-1000 hover:scale-110 hover:border-2 hover:border-white hover:text-xl hover:text-black"}`}
+        onClick={() => handleSoldButtonClick(houseSold)}
       >
-        {/* {houseSold[index] ? "Already sold !" : "Buy now !"} */} You
+        {houseSold ? "Already sold !" : "Buy now !"}
       </button>
     </div>
   );

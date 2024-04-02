@@ -4,7 +4,7 @@ Welcome in my Home Sale App 🏠 !
 
 ## Run the application
 
-You can preview it on Vercel.
+You can preview it on [Vercel](https://first-react-app-gamma-two.vercel.app/).
 
 Or to run locally use :
 

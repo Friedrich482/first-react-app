@@ -2,12 +2,7 @@ import { useState } from "react";
 import LocationIcon from "../../assets/imgs/icons/location.svg";
 import Badge from "../../assets/imgs/icons/badge.svg";
 
-export interface HouseProps{
-  src: string;
-  id: number; 
-  price: number;
-  location: string;
-}
+import type { HouseProps } from "../../types";
 
 const House = ({ src, id, price, location }: HouseProps) => {
   const [houseSold, setHouseSold] = useState(false);

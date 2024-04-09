@@ -1,6 +1,6 @@
 import { useState } from "react";
-import LocationIcon from "../../assets/imgs/icons/location.svg";
-import Badge from "../../assets/imgs/icons/badge.svg";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { SlBadge } from "react-icons/sl";
 
 import type { HouseProps } from "../../types";
 
@@ -23,20 +23,16 @@ const House = ({ src, id, price, location }: HouseProps) => {
         className="mt-8 aspect-square size-72 w-11/12 rounded-lg border-4 border-solid border-red-600"
       />
       <div className="flex w-5/6 items-center justify-center text-center text-xl text-white">
-        <img src={LocationIcon} alt="LocationIcon" className="size-6 w-2/6" />
+        <FaMapMarkerAlt className="size-6 w-2/6 text-red-600" />
         <p className="w-4/6 text-start text-2xl font-bold">{location}</p>
       </div>
-      <p className="flex w-full items-center justify-center border-b-4 border-t-4 border-double border-yellow-300 bg-red-600 text-center text-3xl font-bold text-white">
-        <img
-          src={Badge}
-          alt={`Price badge for the n°${id + 1}`}
-          className="size-8"
-        />
+      <p className="flex w-full items-center justify-center gap-2 border-b-4 border-t-4 border-double border-yellow-300 bg-red-600 text-center  text-3xl font-bold text-white">
+        <SlBadge className="size-8 text-yellow-500" />
         {price} $
       </p>
       <button
         type="button"
-        className={`w-8/12 rounded-lg p-2 font-bold  ${houseSold ? "cursor-not-allowed bg-yellow-600 opacity-85" : "transform bg-yellow-600 duration-1000 hover:scale-110 hover:border-2 hover:border-white hover:text-xl hover:text-black"}`}
+        className={` w-8/12 rounded-lg p-2 font-bold outline-none  ${houseSold ? "cursor-not-allowed bg-yellow-600 opacity-85" : "transform bg-yellow-600 duration-500 hover:outline-1 hover:outline-white"}`}
         onClick={() => handleSoldButtonClick(houseSold)}
       >
         {houseSold ? "Already sold !" : "Buy now !"}

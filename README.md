@@ -25,3 +25,16 @@ npm run dev
 ```
 
 After that open ```localhost:5173``` to see the result.
+
+## Project RoadMap
+
+- This project will involve into something with not only **Houses** but also **Cars** and **Bikes**. So I will practice React Router to create multiple pages. Users have to be able to add any of these articles and add them in their *basket*.
+- Many pages are needed :
+  - Home
+  - Houses
+  - Cars
+  - Bikes
+  - ...
+- Practice the usage of packages like **react-icons**, **react-toastify**, **react-spinners**
+- This list may be updated
+  

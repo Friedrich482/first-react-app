@@ -24,4 +24,4 @@ And finally to serve the project locally, use the command :
 npm run dev
 ```
 
-After that open ```localhost:5173``` to see the result.
+After that open ```localhost:3000``` to see the result.

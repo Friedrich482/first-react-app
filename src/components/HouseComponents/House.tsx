@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { SlBadge } from "react-icons/sl";
-// import { ToastContainer, toast } from "react-toastify";
 import type { HouseProps } from "../../types";
 
 const House = ({ src, id, price, location }: HouseProps) => {
@@ -10,12 +9,10 @@ const House = ({ src, id, price, location }: HouseProps) => {
   const handleSoldButtonClick = (previousState: boolean) => {
     if (!previousState) {
       setHouseSold(!previousState);
-      // toast.success("House Bought !");
     }
   };
   return (
     <>
-      {/* <ToastContainer /> */}
       <div
         key={id}
         className="flex min-h-[500px] min-w-72 max-w-80 transform flex-col items-center gap-3 rounded-lg border-8 border-amber-800 bg-indigo-950 duration-700 hover:scale-110 hover:shadow-md hover:shadow-black hover:outline hover:outline-black"
